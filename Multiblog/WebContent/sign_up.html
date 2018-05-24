@@ -25,6 +25,51 @@
 
 <!-- sign-in style for this template -->
 <link href="css/signin.css" rel="stylesheet">
+<script>
+	$(document).ready(function() {
+
+		$("#signupbtn").click(function() {
+
+			var tel1_pattern = /(^01[016789]$)/; //정규식
+
+			//alert("ok");
+			if ($("#id").val() == "") {
+				alert("아이디를 꼭 입력하세요!");
+				$("#id").focus();
+			} else if ($("#psw").val() == "") {
+				alert("비밀번호를 꼭 입력하세요!");
+				$("#pwd").focus();
+
+			} else if ($("#psw-repeat").val() == "") {
+				alert("비밀번호확인 을 꼭 입력하세요!");
+				$("#pwd2").focus();
+
+			} else if ($("#psw").val() != $("#psw-repeat").val()) {
+				alert("비밀번호와 비밀번호 확인이 일치하지않습니다.");
+				$("#pwd").val("");
+				$("#pwd2").val("");
+				$("#pwd1").focus();
+
+			}
+
+			else if ($("#email").val() == "") {
+				alert("이메일을 꼭 입력하세요!");
+				$("#email").focus();
+
+			} else {
+				alert("ok");
+			}
+
+		});
+
+		//$("#birth").datepicker();
+		//$.datepicker.setDefaults( $.datepicker.regional[ "" ] );
+		//$("#birth").datepicker($.datepicker.regional["ko"]);
+		$("#birth").datepicker();
+
+	});
+</script>
+
 </head>
 
 <body>
@@ -64,7 +109,7 @@
 				<div class="col-lg-8 col-md-10 mx-auto">
 					<div class="page-heading">
 						<h1>Sgin In</h1>
-						<span class="subheading">가입해서 당신의 생각을 적어보세요.</span>
+						<span class="subheading">우리와 함께 해서 당신의 생각을 적어보세요.</span>
 					</div>
 				</div>
 			</div>
@@ -79,33 +124,25 @@
 				<!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
 				<!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
 				<!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-
-
-				<h2>Modal Signup Form</h2>
-
 				<button
 					onclick="document.getElementById('id01').style.display='block'"
-					style="width: auto;">Sign Up</button>
+					style="width: 50%;">Sign Up</button>
 
 				<div id="id01" class="modal">
-					<span
-						onclick="document.getElementById('id01').style.display='none'"
-						class="close" title="Close Modal">&times;</span>
+
 					<form class="modal-content" action="/action_page.php">
 						<div class="container">
 							<h1>Sign Up</h1>
 							<p>Please fill in this form to create an account.</p>
 							<hr>
 							<label for="email"><b>Email</b></label> <input type="text"
-								placeholder="Enter Email" name="email" required> <label
+								placeholder="Email을 입력해주세요." name="email" required> <label
 								for="psw"><b>Password</b></label> <input type="password"
-								placeholder="Enter Password" name="psw" required> <label
+								placeholder="비밀번호를 입력해주세요." name="psw" required> <label
 								for="psw-repeat"><b>Repeat Password</b></label> <input
-								type="password" placeholder="Repeat Password" name="psw-repeat"
-								required> <label> <input type="checkbox"
-								checked="checked" name="remember" style="margin-bottom: 15px">
-								Remember me
-							</label>
+								type="password" placeholder="다시 한번 입력해주세요." name="psw-repeat"
+								required>
+
 
 							<div class="clearfix">
 								<button type="button"
