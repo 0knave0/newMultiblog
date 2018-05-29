@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+   pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,17 +20,10 @@
 <link href="vendor/font-awesome/css/font-awesome.min.css"
 	rel="stylesheet" type="text/css">
 <link href='./css/google_font_css.css' rel='stylesheet' type='text/css'>
-<link href='./font_css.css' rel='stylesheet' type='text/css'>
-
+<link href='./css/font_css.css'>
 
 <!-- Custom styles for this template -->
 <link href="css/clean-blog.min.css" rel="stylesheet">
-<!-- Login css -->
-<link rel="stylesheet" href="./css/css_login.css">
-
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-
 
 </head>
 
@@ -62,14 +57,14 @@
 
 	<!-- Page Header -->
 	<header class="masthead"
-		style="background-image: url('img/home-bg.jpg')">
+		style="background-image: url('img/about-bg.jpg')">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-10 mx-auto">
-					<div class="site-heading">
-						<h1></h1>
-						<span class="subheading"></span>
+					<div class="page-heading">
+						<h1>About Me</h1>
+						<span class="subheading">This is what I do.</span>
 					</div>
 				</div>
 			</div>
@@ -80,48 +75,18 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-md-10 mx-auto">
-				<div class="col-sm-12 text-right">
-					<div class="container-fluid text-center login">
-						<div class="login">
-							<div class="container-fluid">
-								<div class="col-lg-12 login-box">
-
-									<div class="col-lg-6 left-box"></div>
-
-									<div class="col-lg-6 right-box">
-										<h1>LOGIN</h1>
-
-										<div class="form">
-
-											<div class="form-group">
-												<label for="username">아이디 </label> <input type="text"
-													id="username" class="form-control">
-
-											</div>
-
-											<div class="form-group">
-												<label for="password">비밀번호</label> <input type="password"
-													id="password" class="form-control">
-
-											</div>
-
-											<div class="login-button">
-												<button class="btn btn-default"
-													onclick="location.href='./index.html'">로그인</button>
-											</div>
-
-										</div>
-									</div>
-									<!-- right-box -->
-
-								</div>
-								<!--col-lg-8-->
-							</div>
-						</div>
-
-
-					</div>
-				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea
+					nobis sit soluta odio, adipisci quas excepturi maxime quae totam
+					ducimus consectetur?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					Eius praesentium recusandae illo eaque architecto error,
+					repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at
+					quae voluptatum in officia voluptas voluptatibus, minus!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+					consequuntur magnam, excepturi aliquid ex itaque esse est vero
+					natus quae optio aperiam soluta voluptatibus corporis atque iste
+					neque sit tempora!</p>
 			</div>
 		</div>
 	</div>
