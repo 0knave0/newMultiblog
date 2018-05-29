@@ -56,7 +56,7 @@
 					<% String userID=(String)session.getAttribute("userID");
                          System.out.println("Seesion userID : "+userID);
                          if(userID !=null){%>
-                         <li><a href="<%=host %>/sessions/sessionDelete.jsp"><%=userID %></a>
+                         <li><a  href="<%=host %>/sessions/sessionDelete.jsp"  style="color: white"><%=userID %></a>
                          <%}else{ %>
 					<li class="nav-item"><a class="nav-link" href="http://70.12.115.68:8081/Multiblog/login.jsp">Login</a>
                         
