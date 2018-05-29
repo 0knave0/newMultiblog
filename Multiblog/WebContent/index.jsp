@@ -37,7 +37,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top"
 		id="mainNav">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">MultiCampus</a>
+			<a class="navbar-brand" href="http://70.12.115.68:8081/Multiblog/index.jsp">MultiCampus</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button"
 				data-toggle="collapse" data-target="#navbarResponsive"
 				aria-controls="navbarResponsive" aria-expanded="false"
@@ -52,7 +52,16 @@
 					</li>
 					<li class="nav-item"><a class="nav-link" href="http://70.12.115.68:8081/Multiblog/signup.jsp">Sing-Up</a>
 					</li>
+					 <% String host = request.getContextPath(); %>
+					<% String userID=(String)session.getAttribute("userID");
+                         System.out.println("Seesion userID : "+userID);
+                         if(userID !=null){%>
+                         <li><a href="<%=host %>/sessions/sessionDelete.jsp"><%=userID %></a>
+                         <%}else{ %>
 					<li class="nav-item"><a class="nav-link" href="http://70.12.115.68:8081/Multiblog/login.jsp">Login</a>
+                        
+                        <%} %>
+					
 					</li>
 				</ul>
 			</div>
@@ -80,7 +89,7 @@
 		<div class="row">
 			<div class="col-lg-8 col-md-10 mx-auto">
 				<div class="post-preview">
-					<a href="post.html">
+					<a href="http://70.12.115.68:8081/Multiblog/post.jsp">
 						<h2 class="post-title">[책]“실재란 무엇인가?: 양자역학의 의미에 대한 끝없는 여정” –
 							아담 베커</h2>
 						<h3 class="post-subtitle">원자는 실재할까요? 물론 실재합니다. 원자의 존재는 진화나
@@ -94,7 +103,7 @@
 				</div>
 				<hr>
 				<div class="post-preview">
-					<a href="post.html">
+					<a href="http://70.12.115.68:8081/Multiblog/post.jsp">
 						<h2 class="post-title">마이크로소프트가 시도하는 새로운 역할: 도덕적 리더</h2>
 						<h3 class="post-subtitle">현재 페이스북과 구글은 그들의 기술이 잘못된 정보를 전파했는지를
 							조사받고 있습니다. 계속 증가하는 아마존의 시장 지배력은 트럼프 대통령의 주된 타겟이죠. 애플은 스마트폰의 중독에
@@ -106,7 +115,7 @@
 				</div>
 				<hr>
 				<div class="post-preview">
-					<a href="post.html">
+					<a href="http://70.12.115.68:8081/Multiblog/post.jsp">
 						<h2 class="post-title">[코인데스크 코리아] 3D프린팅+블록체인: 제조업의 판을 바꾼다</h2>
 						<h3 class="post-subtitle">코인데스크 자문위원장이자 MIT 디지털 화폐 연구의 블록체인
 							연구 선임 고문인 마이클 케이시의 칼럼을 소개합니다.</h3>
@@ -117,7 +126,7 @@
 				</div>
 				<hr>
 				<div class="post-preview">
-					<a href="post.html">
+					<a href="http://70.12.115.68:8081/Multiblog/post.jsp">
 						<h2 class="post-title">모르는 게 약? 노세보(nocebo) 효과에 관한 연구</h2>
 						<h3 class="post-subtitle">몸이 안 좋을 때 증상을 인터넷에서 검색해보면 몸이 더
 							아파질까요? 새로운 연구에 따르면 정말 그럴 가능성이 있다고 합니다.</h3>

@@ -39,7 +39,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top"
 		id="mainNav">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">MultiCampus</a>
+			<a class="navbar-brand" href="http://70.12.115.68:8081/Multiblog/index.jsp">MultiCampus</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button"
 				data-toggle="collapse" data-target="#navbarResponsive"
 				aria-controls="navbarResponsive" aria-expanded="false"
@@ -91,18 +91,18 @@
 
 									<div class="col-lg-6 right-box">
 										<h1>LOGIN</h1>
-
+										<% String host = request.getContextPath(); %>
 										<form role="form" action="<%=host %>/sessions/sessionStatus.jsp" method="GET">
 
 											<div class="form-group">
 												<label for="username">아이디를 입력해주세요.</label> <input type="text"
-													id="username" class="form-control">
+													id="username" name="email" class="form-control">
 
 											</div>
 
 											<div class="form-group">
 												<label for="password">비밀번호를 입력해주세요.</label> <input type="password"
-													id="password" class="form-control">
+													id="password" name="password" class="form-control">
 
 											</div>
 
