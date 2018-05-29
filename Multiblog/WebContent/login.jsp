@@ -48,13 +48,13 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+					<li class="nav-item"><a class="nav-link" href="http://70.12.115.68:8081/Multiblog/index.jsp">Home</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="about.html">About</a>
+					<li class="nav-item"><a class="nav-link" href="http://70.12.115.68:8081/Multiblog/about.jsp">About</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="sign_up.html">Sing-Up</a>
+					<li class="nav-item"><a class="nav-link" href="http://70.12.115.68:8081/Multiblog/signup.jsp">Sing-Up</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="login.html">Login</a>
+					<li class="nav-item"><a class="nav-link" href="http://70.12.115.68:8081/Multiblog/login.jsp">Login</a>
 					</li>
 				</ul>
 			</div>
