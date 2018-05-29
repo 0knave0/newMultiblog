@@ -9,20 +9,6 @@
 	rel="stylesheet" />
 
 <title>Edit</title>
-<script>
- $().ready(function() {
-
-             var flag =  $('#popUpFlag').val();
-
-             alert("flag = "+flag);
-
-             if(flag){
-                alert("flag is true");
-             }else{
-                alert("flag is false");
-             }
-        })
-</script>
 </head>
 <body>
 	<%@ page import="javabean.MemberBean"%>
@@ -38,11 +24,9 @@
 			response.sendRedirect("http://70.12.115.68:8081/Multiblog/index.jsp");
 		} else {
 			%>
-			<script>
-			alert('hi');
-			</script>
+			<h3></h3>
 			<% 
-			response.sendRedirect("http://70.12.115.68:8081/Multiblog/sessions/sessionDelete.jsp");
+			response.sendRedirect("http://70.12.115.68:8081/Multiblog/login.jsp");
 		}
 	%>
 

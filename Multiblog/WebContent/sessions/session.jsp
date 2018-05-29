@@ -34,6 +34,20 @@
 </head>
 
 <body>
+	<%@ page import="javabean.MemberBean"%>
+	<%
+		String email = request.getParameter("email");
+		String password = request.getParameter("password");
+		MemberBean memberBean = new MemberBean();
+		boolean rightAccount = memberBean.getRightAccount(email, password);
+		boolean flag = false;
+		if (rightAccount == true) {
+			System.out.println("Session userID :" + request.getParameter("email"));
+			session.setAttribute("userID", email);
+			response.sendRedirect("http://70.12.115.68:8081/Multiblog/index.jsp");
+		} else {
+			%>
+			
 
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top"
@@ -85,26 +99,17 @@
 					<div class="container-fluid text-center login">
 						<div class="login">
 							<div class="container-fluid">
-								<div class="col-lg-12 login-box" >
-									<div class="col-lg-6 right-box" >
-										<h1>LOGIN</h1>
+								<div class="col-lg-12 login-box">
+
+									<div class="col-lg-6 left-box"></div>
+
+									<div class="col-lg-6 right-box">
 										<% String host = request.getContextPath(); %>
-										<form role="form" action="<%=host %>/sessions/sessionStatus.jsp" method="GET">
-
-											<div class="form-group">
-												<label for="username">아이디를 입력해주세요.</label> <input type="text"
-													id="username" name="email" class="form-control">
-
-											</div>
-
-											<div class="form-group">
-												<label for="password">비밀번호를 입력해주세요.</label> <input type="password"
-													id="password" name="password" class="form-control">
-
-											</div>
+										<form role="form" action="<%=host %>/login.jsp" method="GET">
+										<h1>ID와 비밀번호를 확인해주세요</h1>
 
 											<div class="login-button">
-												<button class="btn btn-default" type="submit">로그인</button>
+												<button class="btn btn-default" type="submit">로그인 창으로 돌아가기</button>
 											</div>
 
 										</form>
@@ -160,6 +165,10 @@
 	<!-- Custom scripts for this template -->
 	<script src="js/clean-blog.min.js"></script>
 
+			<% 
+			
+		}
+	%>
 </body>
 
 </html>
