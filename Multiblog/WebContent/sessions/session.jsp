@@ -13,21 +13,21 @@
 <title>Clean Blog - MultiCampus Theme</title>
 
 <!-- Bootstrap core CSS -->
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom fonts for this template -->
-<link href="vendor/font-awesome/css/font-awesome.min.css"
+<link href="../vendor/font-awesome/css/font-awesome.min.css"
 	rel="stylesheet" type="text/css">
-<link href='./css/google_font_css.css' rel='stylesheet' type='text/css'>
-<link href='./font_css.css' rel='stylesheet' type='text/css'>
+<link href='../css/google_font_css.css' rel='stylesheet' type='text/css'>
+<link href='../font_css.css' rel='stylesheet' type='text/css'>
 
 
 <!-- Custom styles for this template -->
-<link href="css/clean-blog.min.css" rel="stylesheet">
+<link href="../css/clean-blog.min.css" rel="stylesheet">
 <!-- Login css -->
-<link rel="stylesheet" href="./css/css_login.css">
+<link rel="stylesheet" href="../css/css_login.css">
 
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 
 
 
@@ -77,7 +77,7 @@
 
 	<!-- Page Header -->
 	<header class="masthead"
-		style="background-image: url('img/home-bg.jpg')">
+		style="background-image: url('../img/home-bg.jpg')">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -101,12 +101,14 @@
 							<div class="container-fluid">
 								<div class="col-lg-12 login-box">
 
-									<div class="col-lg-6 left-box"></div>
+									
 
+									<!-- right-box -->
 									<div class="col-lg-6 right-box">
 										<% String host = request.getContextPath(); %>
 										<form role="form" action="<%=host %>/login.jsp" method="GET">
-										<h1>ID와 비밀번호를 확인해주세요</h1>
+										<h3>ID와 비밀번호를<br>
+										확인해주세요</h3>
 
 											<div class="login-button">
 												<button class="btn btn-default" type="submit">로그인 창으로 돌아가기</button>
@@ -114,7 +116,6 @@
 
 										</form>
 									</div>
-									<!-- right-box -->
 
 								</div>
 								<!--col-lg-8-->
@@ -159,11 +160,11 @@
 	</footer>
 
 	<!-- Bootstrap core JavaScript -->
-	<script src="vendor/jquery/jquery.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="../vendor/jquery/jquery.min.js"></script>
+	<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 	<!-- Custom scripts for this template -->
-	<script src="js/clean-blog.min.js"></script>
+	<script src="../js/clean-blog.min.js"></script>
 
 			<% 
 			

@@ -89,7 +89,7 @@
 									<div class="col-lg-6 right-box" >
 										<h1>LOGIN</h1>
 										<% String host = request.getContextPath(); %>
-										<form role="form" action="<%=host %>/sessions/sessionStatus.jsp" method="GET">
+										<form role="form" action="<%=host %>/sessions/session.jsp" method="GET">
 
 											<div class="form-group">
 												<label for="username">아이디를 입력해주세요.</label> <input type="text"
