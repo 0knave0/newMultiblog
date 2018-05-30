@@ -100,20 +100,20 @@
 						<div class="login">
 							<div class="container-fluid">
 								<div class="col-lg-12 login-box">
-
-									
-
 									<!-- right-box -->
-									<div class="col-lg-6 right-box">
+									<div class="col-lg-6 right-box" style="padding-top:30%">
 										<% String host = request.getContextPath(); %>
+										
 										<form role="form" action="<%=host %>/login.jsp" method="GET">
+										
 										<h3>ID와 비밀번호를<br>
-										확인해주세요</h3>
+										확인해주세요.</h3>
 
 											<div class="login-button">
 												<button class="btn btn-default" type="submit">로그인 창으로 돌아가기</button>
 											</div>
 
+									
 										</form>
 									</div>
 

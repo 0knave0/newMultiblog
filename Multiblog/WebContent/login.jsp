@@ -86,7 +86,7 @@
 						<div class="login">
 							<div class="container-fluid">
 								<div class="col-lg-12 login-box" >
-									<div class="col-lg-6 right-box" >
+									<div class="col-lg-6 right-box" style="padding-top:10%" >
 										<h1>LOGIN</h1>
 										<% String host = request.getContextPath(); %>
 										<form role="form" action="<%=host %>/sessions/session.jsp" method="GET">
