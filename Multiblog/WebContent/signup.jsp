@@ -125,7 +125,8 @@ function checkz() {
 	<!-- Main Content -->
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-8 col-md-10 mx-auto">
+			<div class="col-lg-8 col-md-10 mx-auto" >
+			<div style="text-align: center">
 				<p>Sgin-Up 버튼을 눌러주세요.</p>
 				<!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
 				<!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
@@ -133,7 +134,7 @@ function checkz() {
 				<button
 					onclick="document.getElementById('id01').style.display='block'"
 					style="width: 50%;">Sign Up</button>
-
+				</div>
 				<div id="id01" class="modal">
 
 					<form class="modal-content" action="/Multiblog/signup_status">
